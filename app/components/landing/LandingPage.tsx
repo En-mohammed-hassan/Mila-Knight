@@ -185,7 +185,7 @@ export function LandingPage() {
         </div>
 
         <Container>
-          <header className="flex items-center justify-between py-8">
+          <header className="relative z-30 flex items-center justify-between py-8">
             <div className="flex items-center gap-3">
               <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-indigo-600 via-violet-600 to-fuchsia-600 text-white shadow-sm ring-1 ring-black/5">
                 <span className="text-sm font-semibold">MK</span>
@@ -196,17 +196,11 @@ export function LandingPage() {
             </div>
             <div className="flex items-center gap-3">
               <ThemeToggle className="hidden sm:inline-flex" />
-              <details className="relative sm:hidden">
+              <details className="relative z-40 sm:hidden">
                 <summary className="list-none rounded-full border border-zinc-200/80 bg-white/80 px-4 py-2 text-sm font-semibold text-zinc-900 shadow-sm ring-1 ring-black/5 transition hover:border-indigo-200 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:border-white/10 dark:bg-white/5 dark:text-white dark:ring-white/10 dark:hover:border-white/15 dark:hover:bg-white/10 dark:focus-visible:ring-indigo-400 dark:focus-visible:ring-offset-black">
                   Menu
                 </summary>
-                <div className="absolute right-0 mt-2 w-52 overflow-hidden rounded-2xl border border-zinc-200/70 bg-white/90 p-2 shadow-lg ring-1 ring-black/5 backdrop-blur dark:border-white/10 dark:bg-zinc-950/80 dark:ring-white/10">
-                  <div className="flex items-center justify-between gap-2 px-1 pb-2">
-                    <div className="text-xs font-semibold text-zinc-600 dark:text-zinc-300">
-                      Theme
-                    </div>
-                    <ThemeToggle />
-                  </div>
+                <div className="absolute right-0 z-50 mt-2 w-52 overflow-hidden rounded-2xl border border-zinc-200/70 bg-white/90 p-2 shadow-lg ring-1 ring-black/5 backdrop-blur dark:border-white/10 dark:bg-zinc-950/80 dark:ring-white/10">
                   <Link
                     href="#features"
                     className="block rounded-xl px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 hover:text-zinc-900 dark:text-zinc-200 dark:hover:bg-white/5"
@@ -245,7 +239,7 @@ export function LandingPage() {
             </div>
           </header>
 
-          <main className="pb-16 pt-10 sm:pb-24 sm:pt-16">
+          <main className="relative z-0 pb-16 pt-10 sm:pb-24 sm:pt-16">
             <div className="mx-auto max-w-3xl text-center">
               <p className="inline-flex items-center rounded-full border border-indigo-200/60 bg-white/70 px-3 py-1 text-xs font-semibold text-indigo-700 shadow-sm backdrop-blur dark:border-indigo-500/20 dark:bg-white/5 dark:text-indigo-200">
                 Simple task management for modern teams

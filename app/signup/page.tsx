@@ -10,7 +10,7 @@ export default function SignupPage() {
       </div>
 
       <div className="relative mx-auto w-full max-w-md">
-        <div className="mb-4 flex justify-end">
+        <div className="mb-4 hidden justify-end sm:flex">
           <ThemeToggle />
         </div>
         <div className="mb-6 text-center">
