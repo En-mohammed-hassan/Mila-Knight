@@ -302,7 +302,7 @@ export function LandingPage() {
         <Container>
           <SectionHeading
             eyebrow="Features"
-            title="Everything you need — nothing you don’t."
+            title="Everything you need  nothing you don’t."
             description={
               <>
                 Keep work visible and organized with a clean UI, thoughtful
@@ -324,7 +324,7 @@ export function LandingPage() {
             <Feature
               icon={<IconUsers className="h-6 w-6" />}
               title="Team collaboration"
-              description="Assign owners, share progress, and stay aligned — without long threads or busywork."
+              description="Assign owners, share progress, and stay aligned  without long threads or busywork."
             />
           </div>
         </Container>
